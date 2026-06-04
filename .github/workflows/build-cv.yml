@@ -31,22 +31,18 @@ jobs:
     name: Build CV PDF
     runs-on: ubuntu-latest
 
-    defaults:
-      run:
-        working-directory: cv
-
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Compile LaTeX document
+      - name: Compile CV with XeLaTeX
         uses: xu-cheng/latex-action@v3
         with:
           root_file: lukasz-piotr-luczak-cv.tex
           working_directory: cv
           latexmk_use_xelatex: true
           args: >
-            -pdf
+            -xelatex
             -interaction=nonstopmode
             -file-line-error
             -halt-on-error
