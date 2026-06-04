@@ -1,0 +1,65 @@
+name: Build CV
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "cv/**/*.tex"
+      - "cv/**/*.cls"
+      - "cv/**/*.sty"
+      - "cv/**/*.bib"
+      - ".github/workflows/build-cv.yml"
+
+  pull_request:
+    branches:
+      - main
+    paths:
+      - "cv/**/*.tex"
+      - "cv/**/*.cls"
+      - "cv/**/*.sty"
+      - "cv/**/*.bib"
+      - ".github/workflows/build-cv.yml"
+
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-cv:
+    name: Build CV PDF
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: cv
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: lukasz-piotr-luczak-cv.tex
+          working_directory: cv
+          latexmk_use_xelatex: true
+          args: >
+            -pdf
+            -interaction=nonstopmode
+            -file-line-error
+            -halt-on-error
+
+      - name: Upload CV PDF as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: lukasz-piotr-luczak-cv
+          path: cv/lukasz-piotr-luczak-cv.pdf
+
+      - name: Commit generated PDF
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(cv): update generated PDF"
+          file_pattern: cv/lukasz-piotr-luczak-cv.pdf

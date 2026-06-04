@@ -1,0 +1,235 @@
+\documentclass[10pt,a4paper]{article}
+
+\usepackage[a4paper,top=1.25cm,bottom=1.25cm,left=1.35cm,right=1.35cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{needspace}
+\usepackage{ragged2e}
+
+\definecolor{accent}{HTML}{0F4C81}
+\definecolor{accentdark}{HTML}{0B355A}
+\definecolor{textmain}{HTML}{111827}
+\definecolor{textmuted}{HTML}{4B5563}
+\definecolor{linegray}{HTML}{D1D5DB}
+\definecolor{softgray}{HTML}{F3F4F6}
+
+\hypersetup{colorlinks=true,urlcolor=accent,linkcolor=accent}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2.5pt}
+\renewcommand{\arraystretch}{1.18}
+
+\setlist[itemize]{leftmargin=1.15em,topsep=2pt,itemsep=1.5pt,parsep=0pt,partopsep=0pt}
+
+\titleformat{\section}
+  {\needspace{6\baselineskip}\large\bfseries\color{accentdark}}
+  {}{0pt}{}[\vspace{-2pt}{\color{accent}\titlerule[0.8pt]}]
+\titlespacing*{\section}{0pt}{10pt}{5pt}
+
+\newcommand{\cvtag}[1]{%
+  \begingroup
+  \setlength{\fboxsep}{3pt}%
+  \colorbox{softgray}{\strut\small #1}%
+  \endgroup
+}
+
+\newcommand{\role}[4]{%
+  \Needspace{5\baselineskip}%
+  \vspace{3pt}%
+  {\bfseries\color{textmain}#1}\hfill {\small\color{textmuted}#2}\\[-1pt]
+  {\itshape\color{accentdark}#3}\hfill {\small\color{textmuted}#4}\\[-4pt]
+  {\color{linegray}\rule{\textwidth}{0.35pt}}\vspace{-3pt}
+}
+
+\newcommand{\compactrole}[4]{%
+  \Needspace{3\baselineskip}%
+  {\bfseries #1}\hfill {\small\color{textmuted}#2}\\[-1pt]
+  {\itshape\color{accentdark}#3}\hfill {\small\color{textmuted}#4}\vspace{2pt}
+}
+
+\newcommand{\metric}[2]{%
+  \begin{minipage}[t]{0.31\textwidth}
+    {\Large\bfseries\color{accentdark}\mbox{#1}}\\[-2pt]
+    {\small\color{textmuted}#2}
+  \end{minipage}%
+}
+
+\begin{document}
+
+% ===== Header =====
+\begin{minipage}[t]{0.64\textwidth}
+  {\Huge\bfseries\color{textmain} Łukasz Piotr Łuczak}\\[2pt]
+  {\Large\color{accentdark} Solution Architect / Principal Engineer}\\[4pt]
+  {\color{textmuted}Web Platforms \textbullet{} Frontend Architecture \textbullet{} Integrations \textbullet{} Technical Leadership}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.34\textwidth}
+  \raggedleft\small
+  Łódź, Poland \textbullet{} Remote / Hybrid\\
+  Full-time employment or long-term contract\\[2pt]
+  \href{mailto:lukasz@luczak.tech}{lukasz@luczak.tech} \textbullet{} +48 535 015 006\\
+  \href{https://github.com/lukaszpiotrluczak}{github.com/lukaszpiotrluczak}\\
+  \href{https://www.linkedin.com/in/lukaszpiotrluczak/}{linkedin.com/in/lukaszpiotrluczak}
+\end{minipage}
+
+\vspace{7pt}
+{\color{accent}\rule{\textwidth}{1.2pt}}
+\vspace{4pt}
+
+\begin{tabularx}{\textwidth}{@{}X X X@{}}
+\metric{18+ years}{commercial software engineering} &
+\metric{20 engineers}{largest led / supported team} &
+\metric{Architecture}{hands-on delivery and consulting}
+\end{tabularx}
+
+\section{Professional Summary}
+
+Solution Architect / Principal Engineer with 18 years of commercial software engineering experience, focused on web platforms, frontend architecture, integrations, analytical systems and complex business applications. Combines hands-on engineering with architecture ownership, technical leadership, mentoring, code review, CI/CD, quality standards, estimation and client-facing consulting. Experienced in leading teams of up to 20 engineers, supporting 12--15 developers directly, and quickly entering unknown or troubled projects to unblock design, performance and implementation issues.
+
+\section{Selected Impact}
+
+\begin{itemize}
+  \item Led and mentored frontend/software engineering teams of up to 20 people, directly supporting 12--15 engineers through architecture guidance, code review and delivery problem-solving.
+  \item Designed and implemented ``Expressions'', a browser-based business expression language with parser, editor, runtime, validation, API, BDD tests and multi-format build system for SAP ecosystem products used by Fortune 500-class enterprise customers.
+  \item Designed and optimized a React/.NET analytical web application supporting financial statement audit workflows at PwC Advisory.
+  \item Led architecture and development of a car-sharing and scooter-sharing platform as CTO / Chief Architect, enabling real business operations.
+  \item Designed a microservices PoC and contributed to deployment of a scalable live-chat communication channel for high-traffic e-commerce.
+  \item Supported discovery, sales and client-facing architecture work, including solution design, estimates, technical offers and delivery risk assessment.
+\end{itemize}
+
+\section{Core Competencies}
+
+\cvtag{Solution Architecture}\hspace{3pt}
+\cvtag{Principal Engineering}\hspace{3pt}
+\cvtag{Frontend Architecture}\hspace{3pt}
+\cvtag{Web Platforms}\hspace{3pt}
+\cvtag{Technical Leadership}\hspace{3pt}
+\cvtag{Architecture Reviews}\hspace{3pt}
+\cvtag{API Design}\hspace{3pt}
+\cvtag{Integration Architecture}\hspace{3pt}
+\cvtag{Microservices}\hspace{3pt}
+\cvtag{Modular Monoliths}\hspace{3pt}
+\cvtag{Event-Driven Systems}\hspace{3pt}
+\cvtag{Analytical Dashboards}\hspace{3pt}
+\cvtag{Workflow Systems}\hspace{3pt}
+\cvtag{Legacy Modernization}\hspace{3pt}
+\cvtag{Performance Optimization}\hspace{3pt}
+\cvtag{CI/CD}\hspace{3pt}
+\cvtag{Testing Strategy}\hspace{3pt}
+\cvtag{Code Review}\hspace{3pt}
+\cvtag{Quality Gates}\hspace{3pt}
+\cvtag{Discovery Workshops}\hspace{3pt}
+\cvtag{Estimation}\hspace{3pt}
+\cvtag{Mentoring}
+
+\section{Technical Stack}
+
+\begin{tabularx}{\textwidth}{@{}>{\bfseries\color{accentdark}}p{3.4cm}X@{}}
+Frontend & TypeScript, JavaScript, React, Angular, Nx, Microfrontends, SSR/SSG, Playwright, Jest/Vitest, Web Components, Canvas \\
+Backend \& Data & Node.js, PHP, Python, SQL, PostgreSQL, MySQL/MariaDB, REST, GraphQL, Message Queues \\
+Architecture & DDD, Clean Architecture, Hexagonal Architecture, Event Storming, ADRs, API Design, Integration Architecture, Security-Aware Architecture \\
+DevOps \& Infra & Docker, Podman, Linux, Nginx, GitHub Actions, CI/CD, Proxmox, OpenTelemetry, Prometheus/Grafana \\
+\end{tabularx}
+
+\section{Professional Experience}
+
+\role{Independent Technology Consultant}{09.2023--present}{Luczak Consulting}{Łódź / Remote}
+Provides selected architecture and implementation consulting services for web and business platforms. Currently available for full-time employment or long-term contract engagement.
+
+\role{Frontend TechLead / Senior Software Engineer}{10.2021--08.2023, 06.2024--05.2025}{SoftwareHut}{Remote / Poland}
+\begin{itemize}
+  \item Led and mentored a team of 12--15 frontend engineers while participating in delivery projects as a senior hands-on engineer and architecture advisor.
+  \item Designed frontend architectures, performed code reviews across own and external projects, and supported teams with expert-level frontend and web platform knowledge.
+  \item Participated in discovery and sales meetings, prepared solution architectures, technical estimates and implementation offers.
+  \item Frequently brought into unfamiliar or troubled projects to diagnose issues, unblock implementation problems and support delivery.
+  \item Selected work included a healthcare services directory with appointment registration integrated with a government API, and a platform for modelling and designing autonomous warehouse systems.
+\end{itemize}
+
+\role{Trainer / Architecture Consultant}{11.2017--08.2023}{Symentis}{Poland}
+\begin{itemize}
+  \item Delivered around 20 B2B workshops and training programs, totaling approximately 160 hours for about 100 unique participants, from junior developers to architects.
+  \item Responsible for needs analysis, training scope definition, content preparation and delivery.
+  \item Provided architecture and engineering consulting beyond training engagements, supporting teams in software design, project practices and technical decision-making.
+\end{itemize}
+
+\role{Senior Software Developer / Principal Frontend Engineer}{04.2017--11.2021}{Vistex Poland-CEE}{Poland}
+\begin{itemize}
+  \item Designed and implemented ``Expressions'', a business expression language used across enterprise planning, pricing and modelling tools distributed within the SAP ecosystem.
+  \item Started from Excel-like expressions and iteratively evolved the language into a richer system supporting loops, cursors over datasets, dataset pointers, pattern matching and advanced business rules.
+  \item Owned syntax design, parser implementation, browser-based editor integration, validation, runtime, public API, test strategy and a complex multi-format build system producing AMD, UMD, RequireJS, ES6 and SystemJS packages.
+  \item Provided informal frontend technical leadership for enterprise products used by global Fortune 500-class SAP customers.
+\end{itemize}
+
+\role{Architecture and Technology Consultant}{07.2019--12.2019}{PwC Advisory}{Poland}
+\begin{itemize}
+  \item Designed and optimized a React/.NET analytical web application supporting financial statement audit workflows.
+  \item The system presented financial documents dynamically, enabled text selection and annotations, and visualized references and correlations between values across rows, pages and tables.
+  \item Focused on solution architecture, frontend performance and usability of complex document-analysis workflows.
+\end{itemize}
+
+\role{CTO / Chief Architect / Lead Developer}{07.2014--06.2021}{Inn4Tech / Citicar}{Poland}
+\begin{itemize}
+  \item Led architecture and development of a car-sharing and scooter-sharing platform as CTO, architect and lead developer.
+  \item Managed a 7-person team and was responsible for technology decisions, product architecture, implementation direction and delivery.
+  \item Delivered a platform supporting real car-sharing business operations and the core software required to run the service.
+\end{itemize}
+
+\role{Senior Fullstack Developer}{03.2016--03.2017}{STX Next}{Poland}
+\begin{itemize}
+  \item Worked in a 20-person delivery environment on data-heavy web systems, including an analytical dashboard for quant developers and a migration of a pension fund management solution from Oracle Forms / legacy environment to a modern web application.
+  \item Focused on full-stack implementation, data integration, performance and maintainability using Python and JavaScript.
+\end{itemize}
+
+\role{Senior Software Developer / Solution Architect}{10.2014--02.2016}{Focus Telecom Polska}{Poland}
+\begin{itemize}
+  \item Designed architecture and prepared a microservices PoC for a new customer communication channel.
+  \item Contributed to implementation and deployment of a live-chat solution capable of handling traffic from a large e-commerce website and competing with dedicated live-chat platforms.
+  \item Worked with PHP, Symfony, Propel, PostgreSQL and Node.js in a 16-person team.
+\end{itemize}
+
+\role{Senior Software Developer / Solution Architect}{09.2012--09.2014}{Ericpol}{Poland}
+\begin{itemize}
+  \item Designed and led frontend implementation for a web platform supporting application, assessment and processing workflows for cross-border funding programs.
+  \item Led a 6-person implementation team and delivered a web panel with a dynamic reporting module allowing users to define reports at runtime.
+  \item Worked with PHP, JavaScript and Java.
+\end{itemize}
+
+\role{Programmer \& Administrator / Developer}{07.2007--08.2014}{Lodz University of Technology}{Łódź, Poland}
+\begin{itemize}
+  \item Designed, developed and maintained university support systems.
+  \item Developed the EECS Student Connectivity Module, a distributed system for secure student data exchange between universities with electronic document workflow support.
+\end{itemize}
+
+\section{Education, Research and Certifications}
+
+\begin{itemize}
+  \item \textbf{PhD Candidate, Information and Communications Technologies}, Lodz University of Technology, 2022--present. Research: models and algorithms for traffic management in multipath network transmission.
+  \item \textbf{M.Sc., Electronics and Telecommunications}, Lodz University of Technology, 2004--2012. Specialty: Signal and Image Processing.
+  \item \textbf{Researcher}, National Science Centre, Poland, 03.2023--01.2025. Project no. 2021/41/B/ST7/00108: Robust Control Solutions for Multi-Channel Networked Flows.
+  \item \textbf{Internal Auditor of Information Security Management System}, PN-EN ISO/IEC 27001:2017, Dekra, 2020.
+  \item \textbf{Internal Auditor of Integrated Management System}, ISO 9001:2015, ISO 14001:2015, ISO 45001:2018, Dekra, 2019.
+\end{itemize}
+
+\section{Publications, Teaching and Community}
+
+\begin{itemize}
+  \item Peer-reviewed publications on MPTCP congestion control, streaming QoS and multipath transmission, including Future Internet, FedCSIS, EuroSPI² and Annals of Computer Science and Information Systems.
+  \item Lecturer at Uniwersytet Dolnośląski DSW, 10.2023--09.2025: Magento, Python and Cybersecurity.
+  \item Speaker and workshop host at Polish IT conferences and meetups, including 4Developers, SegFault, Warsaw IT Days, meet.js and ByteBay.
+  \item Program committee member for 4Developers tracks: JavaScript, Application Architectures, Frontend and Databases.
+\end{itemize}
+
+\section{Languages}
+
+Polish -- native \textbullet{} English -- C1, professional working proficiency, technical documentation and academic writing
+
+\end{document}

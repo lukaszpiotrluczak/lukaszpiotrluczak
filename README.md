@@ -15,6 +15,11 @@ My background combines software architecture, senior engineering, technical lead
 Currently open to **full-time employment** and **long-term contract engagements**.  
 **Available immediately.**
 
+```markdown
+📄 **CV:** [Download PDF](./cv/lukasz-piotr-luczak-cv.pdf)
+```
+
+
 ---
 
 ## What I usually help with
@@ -128,6 +133,7 @@ I also teach cybersecurity and application security topics, which helps me keep 
 
 ## Contact
 
+- CV: [Download PDF](./cv/lukasz-piotr-luczak-cv.pdf)
 - Email: [lukasz@luczak.tech](mailto:lukasz@luczak.tech)
 - LinkedIn: [linkedin.com/in/lukaszpiotrluczak](https://www.linkedin.com/in/lukaszpiotrluczak/)
 - GitHub: [github.com/lukaszpiotrluczak](https://github.com/lukaszpiotrluczak)
