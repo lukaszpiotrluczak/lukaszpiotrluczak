@@ -15,10 +15,7 @@ My background combines software architecture, senior engineering, technical lead
 Currently open to **full-time employment** and **long-term contract engagements**.  
 **Available immediately.**
 
-```markdown
 📄 **CV:** [Download PDF](./cv/lukasz-piotr-luczak-cv.pdf)
-```
-
 
 ---
 
