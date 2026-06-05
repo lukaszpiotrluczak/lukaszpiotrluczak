@@ -1,0 +1,59 @@
+FROM mcr.microsoft.com/devcontainers/base:bookworm
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    make \
+    perl \
+    libfile-homedir-perl \
+    libyaml-tiny-perl \
+    libunicode-linebreak-perl \
+    python3 \
+    python3-pygments \
+    git \
+    bash \
+    curl \
+    wget \
+    jq \
+    ca-certificates \
+    fontconfig \
+    fonts-inter \
+    fonts-texgyre \
+    ghostscript \
+    poppler-utils \
+    imagemagick \
+    inkscape \
+    latexmk \
+    chktex \
+    biber \
+    lacheck \
+    aspell \
+    aspell-en \
+    aspell-pl \
+    texlive-base \
+    texlive-binaries \
+    texlive-latex-base \
+    texlive-latex-recommended \
+    texlive-latex-extra \
+    texlive-luatex \
+    texlive-xetex \
+    texlive-fonts-recommended \
+    texlive-fonts-extra \
+    texlive-pictures \
+    texlive-plain-generic \
+    texlive-bibtex-extra \
+    texlive-lang-polish \
+    texlive-lang-english \
+    texlive-science \
+    texlive-extra-utils \
+    locales \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen && locale-gen
+
+ENV LANG=en_US.UTF-8
+ENV LC_ALL=en_US.UTF-8
+ENV LANGUAGE=en_US.UTF-8
+
+WORKDIR /workspaces

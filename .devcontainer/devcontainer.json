@@ -1,0 +1,66 @@
+{
+  "name": "LaTeX",
+  "build": {
+    "dockerfile": "Containerfile",
+    "context": ".."
+  },
+  "remoteUser": "vscode",
+  "updateRemoteUserUID": false,
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "James-Yu.latex-workshop",
+        "tecosaur.latex-utilities",
+        "streetsidesoftware.code-spell-checker",
+        "EditorConfig.EditorConfig"
+      ],
+      "settings": {
+        "files.autoSave": "afterDelay",
+        "files.autoSaveDelay": 1000,
+        "editor.formatOnSave": true,
+        "latex-workshop.latex.rootFile.useSubFile": false,
+        "latex-workshop.latex.rootFile.indicator": "cv/lukasz-piotr-luczak-cv.tex",
+        "latex-workshop.latex.autoBuild.run": "onSave",
+        "latex-workshop.latex.recipe.default": "latexmk (xelatex)",
+        "latex-workshop.latex.tools": [
+          {
+            "name": "latexmk-xelatex",
+            "command": "latexmk",
+            "args": [
+              "-xelatex",
+              "-interaction=nonstopmode",
+              "-file-line-error",
+              "-halt-on-error",
+              "%DOC%"
+            ]
+          }
+        ],
+        "latex-workshop.latex.recipes": [
+          {
+            "name": "latexmk (xelatex)",
+            "tools": [
+              "latexmk-xelatex"
+            ]
+          }
+        ],
+        "[latex]": {
+          "editor.defaultFormatter": "James-Yu.latex-workshop"
+        },
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "files.trimTrailingWhitespace": true,
+        "files.insertFinalNewline": true
+      }
+    }
+  },
+  "mounts": [
+    "type=volume,target=/home/vscode/.texlive"
+  ],
+  "postCreateCommand": "bash .devcontainer/post-create.sh",
+  "containerEnv": {
+    "TEXMFVAR": "/home/vscode/.texlive/texmf-var",
+    "TEXMFCONFIG": "/home/vscode/.texlive/texmf-config",
+    "TEXMFHOME": "/workspaces/${localWorkspaceFolderBasename}/texmf",
+    "LC_ALL": "en_US.UTF-8",
+    "LANG": "en_US.UTF-8"
+  }
+}
