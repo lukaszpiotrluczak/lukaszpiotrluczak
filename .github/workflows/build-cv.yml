@@ -38,7 +38,7 @@ jobs:
       - name: Compile CV with XeLaTeX
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: lukasz-piotr-luczak-cv.tex
+          root_file: lukasz-piotr-luczak-public-profile.tex
           working_directory: cv
           latexmk_use_xelatex: true
           args: >
@@ -50,12 +50,12 @@ jobs:
       - name: Upload CV PDF as artifact
         uses: actions/upload-artifact@v4
         with:
-          name: lukasz-piotr-luczak-cv
-          path: cv/lukasz-piotr-luczak-cv.pdf
+          name: lukasz-piotr-luczak-public-profile
+          path: cv/lukasz-piotr-luczak-public-profile.pdf
 
       - name: Commit generated PDF
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore(cv): update generated PDF"
-          file_pattern: cv/lukasz-piotr-luczak-cv.pdf
+          file_pattern: cv/lukasz-piotr-luczak-public-profile.pdf

@@ -1,5 +1,5 @@
 CV_DIR := cv
-CV_TEX := lukasz-piotr-luczak-cv.tex
+CV_TEX := lukasz-piotr-luczak-public-profile.tex
 
 .PHONY: all cv lint clean distclean
 

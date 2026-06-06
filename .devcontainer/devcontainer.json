@@ -19,7 +19,7 @@
         "files.autoSaveDelay": 1000,
         "editor.formatOnSave": true,
         "latex-workshop.latex.rootFile.useSubFile": false,
-        "latex-workshop.latex.rootFile.indicator": "cv/lukasz-piotr-luczak-cv.tex",
+        "latex-workshop.latex.rootFile.indicator": "cv/lukasz-piotr-luczak-public-profile.tex",
         "latex-workshop.latex.autoBuild.run": "onSave",
         "latex-workshop.latex.recipe.default": "latexmk (xelatex)",
         "latex-workshop.latex.tools": [

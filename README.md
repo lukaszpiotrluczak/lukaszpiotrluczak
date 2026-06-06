@@ -1,58 +1,36 @@
 # Hi, I'm Łukasz Piotr Łuczak
 
-![Role](https://img.shields.io/badge/Role-Solution%20Architect%20%2F%20Principal%20Engineer-informational)
-![Availability](https://img.shields.io/badge/Availability-Immediate-success)
-![Work model](https://img.shields.io/badge/Work-Remote%20%2F%20Hybrid-blue)
+![Role](https://img.shields.io/badge/Role-Senior%20Software%20Engineer%20%2F%20Principal%20Engineer-informational)
+![Focus](https://img.shields.io/badge/Focus-Web%20Platforms%20%7C%20Frontend%20Architecture-blue)
+![Work model](https://img.shields.io/badge/Work-Remote%20%2F%20Hybrid-lightgrey)
 ![Location](https://img.shields.io/badge/Location-Łódź%2C%20Poland-lightgrey)
 
-**Solution Architect / Principal Engineer**  
+**Senior Software Engineer / Principal Engineer**
 Web Platforms · Frontend Architecture · Integrations · Technical Leadership
 
-I am a hands-on solution architect and principal-level engineer with 18 years of commercial software engineering experience. I help teams design, simplify, stabilize and deliver complex web platforms, analytical systems, workflow applications and integration-heavy products.
+I design and build complex web and business platforms, especially where architecture, maintainability, integrations and delivery risk matter.
 
-I combine software architecture, senior engineering, technical leadership, mentoring, client-facing consulting, estimation, quality standards and research-driven problem solving.
+My background combines hands-on software engineering, frontend architecture, technical leadership, mentoring, code review, CI/CD, testing strategy and client-facing solution design. I usually work close to implementation, but with enough architectural context to help teams make safer long-term decisions.
 
-Currently open to **full-time employment** and **long-term contract engagements**.  
-**Available immediately.**
-
-📄 **CV:** [Download PDF](./cv/lukasz-piotr-luczak-cv.pdf)
+📄 **Professional profile:** [Download PDF](./cv/lukasz-piotr-luczak-public-profile.pdf)
 
 ---
 
 ## What I usually help with
 
-- Designing and reviewing solution architecture for web platforms and business applications
-- Leading frontend-heavy architecture decisions in React, Angular, TypeScript and Nx ecosystems
+- Designing and reviewing architecture for web platforms and business applications
+- Leading frontend-heavy architecture decisions in TypeScript, React, Angular and Nx ecosystems
 - Entering complex or blocked projects to diagnose problems and unblock delivery
 - Designing APIs, integrations, modular architectures and microservice-oriented PoCs
-- Setting engineering standards: code review, testing strategy, CI/CD, quality gates and ADRs
-- Supporting discovery, estimation, technical offers and client-facing architecture discussions
-- Mentoring developers and supporting engineering teams in day-to-day delivery
-
----
-
-## Selected experience
-
-- **Frontend Tech Lead / Senior Software Engineer, SoftwareHut**  
-  Led and mentored 12–15 frontend engineers, supported project teams as a technology expert, designed frontend architectures, performed code reviews and participated in discovery/sales meetings. Frequently joined unfamiliar or blocked projects to diagnose issues, solve implementation problems and unblock delivery.
-
-- **Senior Software Developer / Principal Frontend Engineer, Vistex**  
-  Designed and implemented a browser-based business expression language used across enterprise planning, pricing and modelling tools distributed within the SAP ecosystem. Owned syntax design, parser implementation, editor integration, runtime, validation, public API, BDD tests and multi-format packaging.
-
-- **Architecture & Technology Consultant, PwC Advisory**  
-  Designed and optimized a React/.NET analytical web application supporting financial statement audit workflows, document analysis, annotations and correlation tracking.
-
-- **CTO / Chief Architect / Lead Developer, Inn4Tech / Citicar**  
-  Led architecture and development of a car-sharing and scooter-sharing platform supporting real business operations.
-
-- **Senior Software Developer / Solution Architect, Focus Telecom**  
-  Designed a microservices PoC and contributed to the deployment of a scalable live-chat communication channel for high-traffic e-commerce.
+- Improving engineering standards: code review, testing strategy, CI/CD, quality gates and ADRs
+- Supporting discovery, estimation and client-facing architecture discussions
+- Mentoring developers and helping teams reason about trade-offs, maintainability and delivery risk
 
 ---
 
 ## Technical focus
 
-**Architecture:** Solution Architecture · Frontend Architecture · API Design · Integration Architecture · Microservices · Modular Monoliths · Event-Driven Systems · DDD · Clean Architecture · Hexagonal Architecture · ADRs
+**Architecture:** Solution Architecture · Frontend Architecture · System Design · API Design · Integration Architecture · Microservices · Modular Monoliths · Event-Driven Systems · DDD · Clean Architecture · Hexagonal Architecture · ADRs
 
 **Frontend:** TypeScript · JavaScript · React · Angular · Nx · Web Components · Playwright · Jest/Vitest · Canvas
 
@@ -64,29 +42,38 @@ Currently open to **full-time employment** and **long-term contract engagements*
 
 ---
 
-## Selected project patterns
+## Selected experience
 
-Over the years I have mostly worked on systems where the hard part was not only writing code, but understanding the domain, reducing ambiguity and making the system maintainable.
+- **Frontend Tech Lead / Senior Software Engineer, SoftwareHut**
+  Led and mentored 12-15 frontend engineers, supported project teams as a technology expert, designed frontend architectures, performed code reviews and participated in discovery/sales meetings. Frequently joined unfamiliar or blocked projects to diagnose issues, solve implementation problems and unblock delivery.
 
-Typical project patterns:
+- **Senior Software Developer / Principal Frontend Engineer, Vistex**
+  Designed and implemented a browser-based business expression language used across enterprise planning, pricing and modelling tools distributed within the SAP ecosystem. Owned syntax design, parser implementation, editor integration, runtime, validation, public API, BDD tests and multi-format packaging.
 
-* complex business applications with non-trivial workflows and many edge cases
-* analytical dashboards and data-heavy user interfaces
-* frontend-heavy applications with demanding UX and performance constraints
-* integration-heavy systems connecting internal tools, APIs and external services
-* legacy modernization and migration from older platforms to modern web applications
-* internal tools supporting financial, operational, academic or public-sector processes
-* platforms where architecture, delivery risk and long-term maintainability matter
+- **Architecture and Technology Consultant, PwC Advisory**
+  Designed and optimized a React/.NET analytical web application supporting financial statement audit workflows, document analysis, annotations and correlation tracking.
+
+- **CTO / Chief Architect / Lead Developer, Inn4Tech / Citicar**
+  Led architecture and development of a car-sharing and scooter-sharing platform supporting real business operations.
+
+- **Senior Software Developer / Solution Architect, Focus Telecom / Ericpol**
+  Worked on communication platforms, public-sector workflow systems, dynamic reporting modules and microservice-oriented PoCs.
 
 ---
 
-## How I work
+## Project patterns
 
-I tend to be most useful when a project needs both architecture and hands-on engineering judgment.
+Most of my work has been in systems where the hard part was not only writing code, but understanding the domain, reducing ambiguity and keeping the system maintainable.
 
-I can help with turning vague requirements into architecture decisions, challenging unsafe assumptions before they become expensive delivery problems, writing ADRs, reviewing code and architecture, defining realistic quality gates and helping developers understand not only *what* to build, but *why* a given design is safer.
+Typical project patterns:
 
-I prefer practical architecture: enough structure to make the system understandable and maintainable, but not so much process that the team stops delivering.
+- complex business applications with non-trivial workflows and edge cases
+- analytical dashboards and data-heavy user interfaces
+- frontend-heavy applications with demanding UX and performance constraints
+- integration-heavy systems connecting internal tools, APIs and external services
+- legacy modernization and migration from older platforms to modern web applications
+- internal tools supporting financial, operational, academic or public-sector processes
+- platforms where architecture, delivery risk and long-term maintainability matter
 
 ---
 
@@ -94,12 +81,12 @@ I prefer practical architecture: enough structure to make the system understanda
 
 A few things I care about:
 
-* readable architecture over fashionable architecture
-* explicit trade-offs over hidden assumptions
-* maintainable delivery over heroic firefighting
-* useful documentation over documentation theatre
-* engineering standards that help teams, not slow them down
-* security and reliability considered early, not bolted on at the end
+- readable architecture over fashionable architecture
+- explicit trade-offs over hidden assumptions
+- maintainable delivery over heroic firefighting
+- useful documentation over documentation theatre
+- engineering standards that help teams, not slow them down
+- security and reliability considered early, not bolted on at the end
 
 ---
 
@@ -113,10 +100,9 @@ I have delivered B2B workshops and consulting engagements in software engineerin
 
 ## Contact
 
-- CV: [Download PDF](./cv/lukasz-piotr-luczak-cv.pdf)
+- Professional profile: [Download PDF](./cv/lukasz-piotr-luczak-public-profile.pdf)
 - Email: [lukasz@luczak.tech](mailto:lukasz@luczak.tech)
 - LinkedIn: [linkedin.com/in/lukaszpiotrluczak](https://www.linkedin.com/in/lukaszpiotrluczak/)
 - GitHub: [github.com/lukaszpiotrluczak](https://github.com/lukaszpiotrluczak)
 - Location: Łódź, Poland
-- Work model: remote / hybrid, full-time employment or long-term contract
-- Availability: immediate
+- Work model: remote / hybrid
